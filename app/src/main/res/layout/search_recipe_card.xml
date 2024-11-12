@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- TextView for the recipe title -->
+
+        <!-- LinearLayout for the time label and value -->
+        <ImageView
+            android:id="@+id/isearchmageView"
+            android:layout_width="292dp"
+            android:layout_height="246dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/searchtitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isearchmageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="68dp"
+            android:fontFamily="@font/poppins"
+            android:text="Classic Greek Salad"
+            android:textColor="#121212"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- ImageView for the bookmark icon -->
+
+        <!-- TextView for the rating -->
+
+        <TextView
+            android:id="@+id/searchratingTextView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/isearchmageView"
+            android:layout_alignEnd="@id/isearchmageView"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/rating_background"
+            android:padding="3dp"
+            android:text="  4.5"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/searchbookmarkImageView"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+
+            android:layout_below="@+id/isearchmageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/baseline_bookmark_border_24" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
